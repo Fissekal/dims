@@ -1,9 +1,10 @@
 import {Component} from 'angular2/core';
 import {TweetComponent} from './tweet.component';
+import {LoveComponent} from './love.component';
 
 @Component( {
     selector: 'my-app',
-    directives: [TweetComponent],
+    directives: [TweetComponent, LoveComponent],
     styles: [`
              .fisk {
                  height: 100%;
@@ -17,6 +18,7 @@ import {TweetComponent} from './tweet.component';
     template: `
     <div class="fisk">
         <tweet [post]="post" ></tweet>
+        <love [inLove]="true" [lovers]=23></love>
     </div>
     `
 })
