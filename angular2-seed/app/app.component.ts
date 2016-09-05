@@ -15,12 +15,6 @@ import {TweetComponent} from './tweet.component';
     template: `
     <div class="fisk">
     <tweet [post]="post" ></tweet>
-    <br><br><tweet [post]="post" ></tweet>
-    <br><br><tweet [post]="post" ></tweet>
-    <br><br><tweet [post]="post" ></tweet>
-    <br><br><tweet [post]="post" ></tweet>
-    <br><br><tweet [post]="post" ></tweet>
-    <br><br><tweet [post]="post" ></tweet>
     </div>
     `
 })
