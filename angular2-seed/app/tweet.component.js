@@ -27,7 +27,8 @@ System.register(['angular2/core', './love.component'], function(exports_1, conte
                 TweetComponent = __decorate([
                     core_1.Component({
                         selector: 'tweet',
-                        template: "\n    <div>\n    <img src={{post.imgURL}} align=\"left\"> {{post.author}}<br> {{post.text}}<br>\n    <love [inLove] = \"post.inLove\" [lovers] = \"post.lovers\"></love><br></div>\n    ",
+                        styles: ["\n             .myTweet {\n                 background-color: white;\n                 width:300;\n                 height: 100;\n             }\n    "],
+                        template: "\n    <div class=\"myTweet\">\n    <img src={{post.imgURL}} align=\"left\"> {{post.author}}<br> {{post.text}}<br>\n    <love [inLove] = \"post.inLove\" [lovers] = \"post.lovers\"></love><br></div>\n    ",
                         directives: [love_component_1.LoveComponent],
                         inputs: ['post']
                     }), 

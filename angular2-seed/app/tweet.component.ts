@@ -3,8 +3,15 @@ import {LoveComponent} from './love.component'
 
 @Component ({
     selector: 'tweet',
+    styles: [`
+             .myTweet {
+                 background-color: white;
+                 width:300;
+                 height: 100;
+             }
+    `],
     template:`
-    <div>
+    <div class="myTweet">
     <img src={{post.imgURL}} align="left"> {{post.author}}<br> {{post.text}}<br>
     <love [inLove] = "post.inLove" [lovers] = "post.lovers"></love><br></div>
     `,

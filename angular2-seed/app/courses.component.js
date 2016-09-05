@@ -48,10 +48,9 @@ System.register(['angular2/core', './course.service', './autogrow.directive'], f
                         providers: [course_service_1.CourseService],
                         directives: [autogrow_directive_1.AutoGrowDirective]
                     }), 
-                    __metadata('design:paramtypes', [(typeof (_a = typeof course_service_1.CourseService !== 'undefined' && course_service_1.CourseService) === 'function' && _a) || Object])
+                    __metadata('design:paramtypes', [course_service_1.CourseService])
                 ], CoursesComponent);
                 return CoursesComponent;
-                var _a;
             }());
             exports_1("CoursesComponent", CoursesComponent);
         }

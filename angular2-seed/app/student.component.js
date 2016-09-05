@@ -32,10 +32,9 @@ System.register(['angular2/core', './student.service'], function(exports_1, cont
                         template: "\n    <h2>Studerende</h2>\n    {{ navn }}\n    <ul>\n        <li *ngFor=\"#amount of students\">\n        {{ amount }}\n        </li>\n    </ul>\n    ",
                         providers: [student_service_1.StudentService]
                     }), 
-                    __metadata('design:paramtypes', [(typeof (_a = typeof student_service_1.StudentService !== 'undefined' && student_service_1.StudentService) === 'function' && _a) || Object])
+                    __metadata('design:paramtypes', [student_service_1.StudentService])
                 ], StudentComponent);
                 return StudentComponent;
-                var _a;
             }());
             exports_1("StudentComponent", StudentComponent);
         }

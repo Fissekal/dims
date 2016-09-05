@@ -34,8 +34,8 @@ System.register(['angular2/core', './tweet.component'], function(exports_1, cont
                     core_1.Component({
                         selector: 'my-app',
                         directives: [tweet_component_1.TweetComponent],
-                        styles: ["\n             .fisk {\n                 background-image: url('http://lorempixel.com/1920/1100');\n                 background-attachment: fixed;\n                 background-color: red;\n                 }\n             \n    "],
-                        template: "\n    <div class=\"fisk\">\n    <tweet [post]=\"post\" ></tweet>\n    </div>\n    "
+                        styles: ["\n             .fisk {\n                 height: 100%;\n                 width: 100%;\n                 background-image: url('http://lorempixel.com/1920/1100');\n                 background-attachment: fixed;\n                 background-color: red;\n                 }\n             \n    "],
+                        template: "\n    <div class=\"fisk\">\n        <tweet [post]=\"post\" ></tweet>\n    </div>\n    "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
