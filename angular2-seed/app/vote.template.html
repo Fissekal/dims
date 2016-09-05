@@ -1,0 +1,11 @@
+<div class="wwThree">
+        <i
+        class="glyphicon glyphicon-menu-up arrow"
+        [class.voted] = "myVote==1"
+        (click)="upGoesTrump()"></i>
+        <span class="amountOfLikes"> {{ votes }} </span>
+        <i
+        class="glyphicon glyphicon-menu-down arrow"
+        [class.voted] = "myVote==-1"
+        (click)="downGoesTrump()"></i>
+</div>
