@@ -30,8 +30,8 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 LoveComponent = __decorate([
                     core_1.Component({
                         selector: 'love',
-                        template: "\n        <i\n        class=\"glyphicon glyphicon-heart\"\n        [class.rth] = \"inLove\"\n        (click)=\"cupidStrike()\"> </i>\n        <span class=\"amountOfLovers\"> {{lovers}} </span>\n    ",
-                        styles: ["\n        .glyphicon-heart {\n            color: #ccc;\n            cursor: pointer;\n        }\n        .rth {\n        color: deeppink;\n        }\n    "],
+                        template: "\n        <i\n        class=\"glyphicon glyphicon-heart\"\n        [class.liked] = \"inLove\"\n        (click)=\"cupidStrike()\"> </i>\n        <span class=\"amountOfLovers\"> {{lovers}} </span>\n    ",
+                        styles: ["\n        .glyphicon-heart {\n            color: #ccc;\n            cursor: pointer;\n        }\n        .liked {\n        color: deeppink;\n        }\n    "],
                         inputs: ['inLove', 'lovers']
                     }), 
                     __metadata('design:paramtypes', [])

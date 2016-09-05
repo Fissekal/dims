@@ -5,7 +5,7 @@ import {Component, Output, EventEmitter} from 'angular2/core'
     template: `
         <i
         class="glyphicon glyphicon-heart"
-        [class.rth] = "inLove"
+        [class.liked] = "inLove"
         (click)="cupidStrike()"> </i>
         <span class="amountOfLovers"> {{lovers}} </span>
     `,
@@ -14,7 +14,7 @@ import {Component, Output, EventEmitter} from 'angular2/core'
             color: #ccc;
             cursor: pointer;
         }
-        .rth {
+        .liked {
         color: deeppink;
         }
     `],
