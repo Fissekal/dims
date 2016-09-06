@@ -1,4 +1,4 @@
-System.register(['angular2/core', './subscribe-form.component'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,32 +10,31 @@ System.register(['angular2/core', './subscribe-form.component'], function(export
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, subscribe_form_component_1;
-    var AppComponent;
+    var core_1;
+    var SubscribeFormComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (subscribe_form_component_1_1) {
-                subscribe_form_component_1 = subscribe_form_component_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
+            SubscribeFormComponent = (function () {
+                function SubscribeFormComponent() {
                 }
-                AppComponent = __decorate([
+                SubscribeFormComponent.prototype.onSubscribe = function (form) {
+                    console.log(form);
+                };
+                SubscribeFormComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-app',
-                        directives: [subscribe_form_component_1.SubscribeFormComponent],
-                        template: "\n    <subscribe-form></subscribe-form>\n    "
+                        selector: 'subscribe-form',
+                        templateUrl: 'app/subscribe-form.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], SubscribeFormComponent);
+                return SubscribeFormComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("SubscribeFormComponent", SubscribeFormComponent);
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=subscribe-form.component.js.map

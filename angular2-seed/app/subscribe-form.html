@@ -1,0 +1,36 @@
+<form #f="ngForm" (ngSubmit)="onSubscribe(f.form)">
+	<div class="form-group">
+		<label for="fullName">Full Name, please</label> <input
+			ngControl="fullName" #fullName="ngForm" id="fullName" type="text"
+			class="form-control" required minlength="3">
+		<div *ngIf="fullName.touched && fullName.errors">
+			<div class="alert alert-danger" *ngIf="fullName.errors.required">
+				full name is required.</div>
+			<div class="alert alert-danger" *ngIf="fullName.errors.minlength">
+				full name should be minimum {{
+				fullName.errors.minlength.requiredLength }} characters.</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="email">Email</label> <input ngControl="email"
+			#email="ngForm" id="email" type="email" class="form-control" required
+			minlength="5">
+		<div *ngIf="email.touched && email.errors">
+			<div class="alert alert-danger" *ngIf="email.errors.required">
+				Email is required for spamming you</div>
+			<div class="alert alert-danger" *ngIf="email.errors.minlength">
+				Email should be at least {{ email.errors.minlength.requiredLength }}
+				characters. Nice try.....</div>
+		</div>
+	</div>
+
+	<div class="dropdown">
+		Frequency of spamming<br> <select>
+			<option>Daily</option>
+			<option>Every hour!</option>
+			<option>Every minute!!</option>
+			<option>Every second!!!</option>
+		</select>
+	</div>
+	<button class="btn btn-primary" type="submit" [disabled]="!f.valid">Submit</button>
+</form>
